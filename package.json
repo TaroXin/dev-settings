@@ -8,10 +8,9 @@
     "url": "http://www.taroxin.com"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-watch": "vue-cli-service  --env.NODE_ENV=development build --watch --mode development"
+    "serve": "vue-cli-service  --env.NODE_ENV=development build --watch --mode development"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -31,6 +30,8 @@
     "@vue/cli-service": "~5.0.0",
     "@vue/eslint-config-typescript": "^9.1.0",
     "eslint": "^8.31.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
     "typescript": "^4.9.4"
   },
   "browserslist": [

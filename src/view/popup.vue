@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const msg = ref('Popup1 ')
+const msg = ref('Popup')
 </script>
 
 <template>
@@ -10,13 +10,12 @@ const msg = ref('Popup1 ')
   </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 .main_app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  width: 400px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
