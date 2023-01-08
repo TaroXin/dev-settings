@@ -1,5 +1,7 @@
 {
-  "extends": ["@taroxin/eslint-config"],
+  "extends": [
+    "@taroxin/eslint-config"
+  ],
   "env": {
     "browser": true,
     "webextensions": true
