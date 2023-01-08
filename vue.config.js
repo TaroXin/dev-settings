@@ -3,6 +3,20 @@ const fs = require('fs')
 
 // Generate pages object
 const pages = {}
+const copyFiles = [
+  {
+    from: 'src/manifest.json',
+    to: 'dist/manifest.json',
+  },
+  {
+    from: 'public/',
+    to: 'dist/',
+  },
+  {
+    from: 'src/assets',
+    to: 'dist/assets',
+  },
+]
 
 function getEntryFile(entryPath) {
   const files = fs.readdirSync(entryPath)
@@ -36,20 +50,10 @@ module.exports = {
       .use(require('copy-webpack-plugin'),
         [
           {
-            patterns: [
-              {
-                from: path.resolve(`src/manifest.${process.env.NODE_ENV}.json`),
-                to: `${path.resolve('dist')}/manifest.json`,
-              },
-              {
-                from: path.resolve('public/'),
-                to: `${path.resolve('dist')}/`,
-              },
-              {
-                from: path.resolve('src/assets'),
-                to: `${path.resolve('dist/assets')}/`,
-              },
-            ],
+            patterns: copyFiles.map(setting => ({
+              from: path.resolve(setting.from),
+              to: path.resolve(setting.to),
+            })),
           },
         ])
   },

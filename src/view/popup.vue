@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const msg = ref('Popup')
+const msg = ref('Popup Test')
 </script>
 
 <template>
