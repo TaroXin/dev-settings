@@ -66,5 +66,12 @@ module.exports = {
   },
   css: {
     extract: false, // Make sure the css is the same
+    loaderOptions: {
+      less: {
+        lessOptions: {
+          javascriptEnabled: true,
+        },
+      },
+    },
   },
 }

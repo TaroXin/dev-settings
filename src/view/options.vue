@@ -15,7 +15,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .main_app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
