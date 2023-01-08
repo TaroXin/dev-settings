@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const msg = ref('Popup Test1')
-
-function setStorage() {
+function setSettingConfig() {
   chrome.storage.local.set({
-    'test-value': 'This is test message',
+    settingConfig: {
+      isDebugger: false,
+      namedValue: 'test string',
+    },
   })
 }
 
@@ -17,9 +18,29 @@ async function getStorage() {
 
 <template>
   <div class="main_app">
-    <h1>Hello {{ msg }}</h1>
+    <a-list bordered>
+      <a-list-item>
+        <div class="mobile-style">
+          <span>Debugger Mode</span>
+          <a-switch />
+        </div>
+      </a-list-item>
 
-    <a-button type="primary" @click="setStorage">
+      <a-list-item>
+        <div class="mobile-style">
+          <span>高拍仪IP</span>
+          <a-input placeholder="ipv4 类型" maxlength="15" />
+        </div>
+      </a-list-item>
+
+      <template #header>
+        <div class="list-header">
+          变量设置
+        </div>
+      </template>
+    </a-list>
+
+    <a-button type="primary" @click="setSettingConfig">
       设置一个变量
     </a-button>
     <a-button type="primary" @click="getStorage">
@@ -35,5 +56,23 @@ async function getStorage() {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  padding: 15px;
+}
+
+.list-header {
+  font-weight: bold;
+  text-align: left;
+}
+
+.mobile-style {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  .ant-input {
+    width: 200px;
+    text-align: right;
+  }
 }
 </style>

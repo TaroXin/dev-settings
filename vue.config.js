@@ -32,10 +32,12 @@ function getFileExtension(filename) {
 chromeName.forEach((name) => {
   const fileExtension = getFileExtension(name)
   const fileName = name.replace(`.${fileExtension}`, '')
-  pages[fileName] = {
-    entry: `src/entry/${name}`,
-    template: 'public/index.html',
-    filename: `${fileName}.html`,
+  if (!fileName.startsWith('_')) {
+    pages[fileName] = {
+      entry: `src/entry/${name}`,
+      template: 'public/index.html',
+      filename: `${fileName}.html`,
+    }
   }
 })
 
@@ -55,7 +57,9 @@ module.exports = {
               to: path.resolve(setting.to),
             })),
           },
-        ])
+        ],
+      )
+      .end()
   },
   configureWebpack: {
     output: {
