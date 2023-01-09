@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
-import bootstrapAntd from '@/components/antd-register'
+import Vant from 'vant'
 import App from '@/view/popup.vue'
-import '@/style/antd.less'
 
 const app = createApp(App)
-bootstrapAntd(app)
+
+app.use(Vant)
 
 app.mount('#app')
