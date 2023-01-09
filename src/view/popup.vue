@@ -11,11 +11,9 @@ import VarSettings from '@/components/var-settings/index.vue'
 
 <style lang="less" scoped>
 .main_app {
-  width: 400px;
+  width: 375px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  padding: 15px;
+  background-color: #f1f1f1;
 }
 </style>
