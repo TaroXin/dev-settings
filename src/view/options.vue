@@ -17,19 +17,19 @@ const currentPage = ref(0)
 </script>
 
 <template>
-  <div class="menu">
-    <div class="menu-header">
+  <div class="w-1024 mx-auto flex py-4 h-screen">
+    <div class="w-32">
       <div
         v-for="(menu, index) in menuList"
         :key="index"
-        class="menu-header-item"
+        class="h-10 bg-zinc-100 text-center"
         :class="{ active: index == currentPage }"
         @click="currentPage = index"
       >
         {{ menu.name }}
       </div>
     </div>
-    <div class="menu-content">
+    <div class="flex-1 bg-white bg-opacity-40 h-full">
       <component
         :is="menuList[currentPage]?.component"
       />
@@ -38,31 +38,30 @@ const currentPage = ref(0)
 </template>
 
 <style lang="less" scoped>
-.menu {
-  width: 1024px;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  padding: 20px 0;
-  font-size: 14px;
-  box-sizing: border-box;
+// .menu {
+//   width: 1024px;
+//   height: 100vh;
+//   margin: 0 auto;
+//   display: flex;
+//   font-size: 14px;
+//   box-sizing: border-box;
 
-  &-header {
-    width: 200px;
+//   &-header {
+//     width: 200px;
 
-    &-item {
-      padding: 15px;
-      cursor: pointer;
+//     &-item {
+//       padding: 15px;
+//       cursor: pointer;
 
-      &.active, &:hover {
-        background: rgba(255,255,255,0.6);
-      }
-    }
-  }
+//       &.active, &:hover {
+//         background: rgba(255,255,255,0.6);
+//       }
+//     }
+//   }
 
-  &-content {
-    flex: 1;
-    background: rgba(255,255,255,0.6);
-  }
-}
+//   &-content {
+//     flex: 1;
+//     background: rgba(255,255,255,0.6);
+//   }
+// }
 </style>
