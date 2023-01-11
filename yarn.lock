@@ -19,11 +19,6 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@antfu/utils@^0.7.2":
-  version "0.7.2"
-  resolved "https://registry.npmmirror.com/@antfu/utils/-/utils-0.7.2.tgz#3bb6f37a6b188056fe9e2f363b6aa735ed65d7ca"
-  integrity sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g==
-
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.18.6", "@babel/code-frame@^7.8.3":
   version "7.18.6"
   resolved "https://registry.npmmirror.com/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
@@ -1052,7 +1047,7 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@jridgewell/sourcemap-codec@1.4.14", "@jridgewell/sourcemap-codec@^1.4.10", "@jridgewell/sourcemap-codec@^1.4.13":
+"@jridgewell/sourcemap-codec@1.4.14", "@jridgewell/sourcemap-codec@^1.4.10":
   version "1.4.14"
   resolved "https://registry.npmmirror.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
   integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
@@ -2018,28 +2013,6 @@
     "@webassemblyjs/ast" "1.11.1"
     "@xtuc/long" "4.2.2"
 
-"@windicss/config@1.8.10":
-  version "1.8.10"
-  resolved "https://registry.npmmirror.com/@windicss/config/-/config-1.8.10.tgz#717f070889db153fdfead4bc4401f4120f3de4ae"
-  integrity sha512-O9SsC110b1Ik3YYa4Ck/0TWuCo7YFfA9KDrwD5sAeqscT5COIGK1HszdCT3oh0MJFej2wNrvpfyW9h6yQaW6PA==
-  dependencies:
-    debug "^4.3.4"
-    jiti "^1.16.0"
-    windicss "^3.5.6"
-
-"@windicss/plugin-utils@^1.8.8":
-  version "1.8.10"
-  resolved "https://registry.npmmirror.com/@windicss/plugin-utils/-/plugin-utils-1.8.10.tgz#241d5a93650be826c9cbd2614341885b044251c7"
-  integrity sha512-Phqk5OW1w+Mv+ry6t7BzAeDq3aMhbI94gR49j9vQCufFfDGCHndhhjtMK0sBv+NPJUsIAIh6qayb1iwBCXUGrw==
-  dependencies:
-    "@antfu/utils" "^0.7.2"
-    "@windicss/config" "1.8.10"
-    debug "^4.3.4"
-    fast-glob "^3.2.12"
-    magic-string "^0.27.0"
-    micromatch "^4.0.5"
-    windicss "^3.5.6"
-
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npmmirror.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz#eef014a3145ae477a1cbc00cd1e552336dceb790"
@@ -3004,11 +2977,6 @@ define-properties@^1.1.3, define-properties@^1.1.4:
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
 
-defu@^6.0.0:
-  version "6.1.1"
-  resolved "https://registry.npmmirror.com/defu/-/defu-6.1.1.tgz#a12c712349197c545dc61d3cd3b607b4cc7ef0c1"
-  integrity sha512-aA964RUCsBt0FGoNIlA3uFgo2hO+WWC0fiC6DBps/0SFzkKcYoM/3CzVLIa5xSsrFjdioMdYgAIbwo80qp2MoA==
-
 depd@2.0.0:
   version "2.0.0"
   resolved "https://registry.npmmirror.com/depd/-/depd-2.0.0.tgz#b696163cc757560d09cf22cc8fad1571b79e76df"
@@ -3714,7 +3682,7 @@ fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   resolved "https://registry.npmmirror.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==
 
-fast-glob@^3.2.12, fast-glob@^3.2.7, fast-glob@^3.2.9:
+fast-glob@^3.2.7, fast-glob@^3.2.9:
   version "3.2.12"
   resolved "https://registry.npmmirror.com/fast-glob/-/fast-glob-3.2.12.tgz#7f39ec99c2e6ab030337142da9e0c18f37afae80"
   integrity sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==
@@ -3930,11 +3898,6 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.1, get-intrinsic@^1.1.3:
     function-bind "^1.1.1"
     has "^1.0.3"
     has-symbols "^1.0.3"
-
-get-port@^6.1.2:
-  version "6.1.2"
-  resolved "https://registry.npmmirror.com/get-port/-/get-port-6.1.2.tgz#c1228abb67ba0e17fb346da33b15187833b9c08a"
-  integrity sha512-BrGGraKm2uPqurfGVj/z97/zv8dPleC6x9JBNRTrDNtCkkRF4rPwrQXFgL7+I+q8QSdU4ntLQX2D7KIxSy8nGw==
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -4614,11 +4577,6 @@ jest-worker@^28.0.2:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jiti@^1.16.0:
-  version "1.16.2"
-  resolved "https://registry.npmmirror.com/jiti/-/jiti-1.16.2.tgz#75f7a0a8fde4a0e57e576f7d329491d588db89cf"
-  integrity sha512-OKBOVWmU3FxDt/UH4zSwiKPuc1nihFZiOD722FuJlngvLz2glX1v2/TJIgoA4+mrpnXxHV6dSAoCvPcYQtoG5A==
-
 joi@^17.4.0:
   version "17.7.0"
   resolved "https://registry.npmmirror.com/joi/-/joi-17.7.0.tgz#591a33b1fe1aca2bc27f290bcad9b9c1c570a6b3"
@@ -4924,13 +4882,6 @@ magic-string@^0.25.7:
   integrity sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==
   dependencies:
     sourcemap-codec "^1.4.8"
-
-magic-string@^0.27.0:
-  version "0.27.0"
-  resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.27.0.tgz#e4a3413b4bab6d98d2becffd48b4a257effdbbf3"
-  integrity sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==
-  dependencies:
-    "@jridgewell/sourcemap-codec" "^1.4.13"
 
 make-dir@^2.1.0:
   version "2.1.0"
@@ -5520,11 +5471,6 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmmirror.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
-
-pathe@^0.3.5:
-  version "0.3.9"
-  resolved "https://registry.npmmirror.com/pathe/-/pathe-0.3.9.tgz#4baff768f37f03e3d9341502865fb93116f65191"
-  integrity sha512-6Y6s0vT112P3jD8dGfuS6r+lpa0qqNrLyHPOwvXMnyNTQaYiwgau2DP3aNDsR13xqtGj7rrPo+jFUATpU6/s+g==
 
 picocolors@^0.2.1:
   version "0.2.1"
@@ -6893,14 +6839,6 @@ vue-class-component@^8.0.0-0:
   resolved "https://registry.npmmirror.com/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz#db692cd97656eb9a08206c03d0b7398cdb1d9420"
   integrity sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==
 
-vue-cli-plugin-windicss@~1.1.6:
-  version "1.1.6"
-  resolved "https://registry.npmmirror.com/vue-cli-plugin-windicss/-/vue-cli-plugin-windicss-1.1.6.tgz#57d58381d2d9306bffb0abc5a734a1914da15782"
-  integrity sha512-lN/0VjF52VU9AkXLUCsVAZUeLDvGZy8aEWDxQXFYksEPToPZFlzla19fHcuVmtT2jBWosWoGzeZcE1e9ViqUSA==
-  dependencies:
-    defu "^6.0.0"
-    windicss-webpack-plugin "^1.7.4"
-
 vue-eslint-parser@^8.0.0:
   version "8.3.0"
   resolved "https://registry.npmmirror.com/vue-eslint-parser/-/vue-eslint-parser-8.3.0.tgz#5d31129a1b3dd89c0069ca0a1c88f970c360bd0d"
@@ -7074,7 +7012,7 @@ webpack-sources@^3.2.3:
   resolved "https://registry.npmmirror.com/webpack-sources/-/webpack-sources-3.2.3.tgz#2d4daab8451fd4b240cc27055ff6a0c2ccea0cde"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
-webpack-virtual-modules@^0.4.2, webpack-virtual-modules@^0.4.4:
+webpack-virtual-modules@^0.4.2:
   version "0.4.6"
   resolved "https://registry.npmmirror.com/webpack-virtual-modules/-/webpack-virtual-modules-0.4.6.tgz#3e4008230731f1db078d9cb6f68baf8571182b45"
   integrity sha512-5tyDlKLqPfMqjT3Q9TAqf2YqjwmnUleZwzJi1A5qXnlBCdj2AtOJ6wAWdglTIDOPgOiOrXeBeFcsQ8+aGQ6QbA==
@@ -7177,25 +7115,6 @@ wildcard@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmmirror.com/wildcard/-/wildcard-2.0.0.tgz#a77d20e5200c6faaac979e4b3aadc7b3dd7f8fec"
   integrity sha512-JcKqAHLPxcdb9KM49dufGXn2x3ssnfjbcaQdLlfZsL9rH9wgDQjUtDxbo8NE0F6SFvydeu1VhZe7hZuHsB2/pw==
-
-windicss-webpack-plugin@^1.7.4:
-  version "1.7.7"
-  resolved "https://registry.npmmirror.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.7.7.tgz#0ed6df9d16c61dda01071646c16b1a78826fddab"
-  integrity sha512-a5I6xm57PC5mFqjHn+CxcmPI6Hueg1pQlzzQWxq1ynvz/9SZ6rTN3HAsHuw3n/OTq83ogXdgM+v5Htc+vThjFg==
-  dependencies:
-    "@windicss/plugin-utils" "^1.8.8"
-    debug "^4.3.4"
-    get-port "^6.1.2"
-    loader-utils "^2.0.0"
-    lodash "^4.17.21"
-    pathe "^0.3.5"
-    webpack-virtual-modules "^0.4.4"
-    windicss "^3.5.6"
-
-windicss@^3.5.6:
-  version "3.5.6"
-  resolved "https://registry.npmmirror.com/windicss/-/windicss-3.5.6.tgz#30a34da76894d952a96c9a1921f2e91e13932183"
-  integrity sha512-P1mzPEjgFMZLX0ZqfFht4fhV/FX8DTG7ERG1fBLiWvd34pTLVReS5CVsewKn9PApSgXnVfPWwvq+qUsRwpnwFA==
 
 word-wrap@^1.2.3:
   version "1.2.3"
