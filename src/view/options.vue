@@ -17,7 +17,7 @@ const currentPage = ref(0)
 </script>
 
 <template>
-  <div class="w-1024 mx-auto flex py-4 h-screen">
+  <div class="w-1024px flex py-4 h-screen" w:m="x-auto">
     <div class="w-32">
       <div
         v-for="(menu, index) in menuList"
@@ -36,32 +36,3 @@ const currentPage = ref(0)
     </div>
   </div>
 </template>
-
-<style lang="less" scoped>
-// .menu {
-//   width: 1024px;
-//   height: 100vh;
-//   margin: 0 auto;
-//   display: flex;
-//   font-size: 14px;
-//   box-sizing: border-box;
-
-//   &-header {
-//     width: 200px;
-
-//     &-item {
-//       padding: 15px;
-//       cursor: pointer;
-
-//       &.active, &:hover {
-//         background: rgba(255,255,255,0.6);
-//       }
-//     }
-//   }
-
-//   &-content {
-//     flex: 1;
-//     background: rgba(255,255,255,0.6);
-//   }
-// }
-</style>
