@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { devSettings } from './entry/content'
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
   

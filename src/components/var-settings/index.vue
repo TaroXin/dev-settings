@@ -7,13 +7,15 @@ const checked = ref(false)
 <template>
   <div class="var-settings-container">
     <van-form>
-      <van-cell-group title="变量设置">
-        <van-cell title="Debug Mode">
+      <van-cell-group title="系统内置变量">
+        <van-cell title="调试模式">
           <template #right-icon>
             <van-switch v-model="checked" />
           </template>
         </van-cell>
+      </van-cell-group>
 
+      <van-cell-group title="页面变量">
         <van-field
           label="高拍仪IP"
           placeholder="请输入高拍仪IP"
