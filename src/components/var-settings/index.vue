@@ -28,7 +28,7 @@ async function getCurrentSettings() {
       console.log(optionList, currentTab.url)
       if (currentTab.url) {
         const url = new URL(currentTab.url)
-        componentList.value = optionList.filter(o => o.id == url.hostname)
+        componentList.value = optionList.filter(o => o.id == url.host)
 
         // 系统变量查询
         const result = optionList.filter(o => o.id == DEV_SETTING_VAR_ID)
