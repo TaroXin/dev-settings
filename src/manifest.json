@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Development Tools",
   "description": "Development setting mapper",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "icons": {
     "16": "assets/icons/icon_16.png",
     "48": "assets/icons/icon_48.png",
